@@ -295,7 +295,7 @@ class SnoopTransactions:
 
 
 if __name__ == "__main__":
-    parser = ArgumentParser(description="transforming file")
+    parser = ArgumentParser(description="Transforming Transactions file")
     parser.add_argument(
         "--file_source",
         nargs="?",
@@ -309,5 +309,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     transactions = SnoopTransactions(args.file_source, args.file_location)
     sys.exit(
-        transactions.process_file(),
+        transactions.process_file()
     )

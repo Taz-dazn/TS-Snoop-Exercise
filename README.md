@@ -18,12 +18,12 @@ POSTGRES_PORT: '***'
 ```
 
 ### Run the Script
-- Run the following line in your command line from the project root, followed by the batch_date argument:
+- Run the following line in your command line from the project root, followed by the required arguments:
 ``` shell
 pipenv run python snoop_program.py --file_source=local --file_location=tech_assessment_transactions.json
 ```
 - file_source = source of the file, can only be s3 or local
-- file_location = location of the file, local file path or full s3_key
+- file_location = location of the file, local file path or full s3_key (e.g. 's3://bucket/path/to/file.json')
 
 ## How to run the Tests (READ FULLY BEFORE RUNNING)
 1. Make sure your machine runs Python v3.9 (3.6+ should work)
@@ -33,7 +33,7 @@ pip install pipenv
 ```
 
 ### Run the Script
-- Run the following line in your command line from the project root, followed by the batch_date argument:
+- Run the following line in your command line from the project root:
 ``` shell
 pipenv run python -m pytest test/test_snoop_program.py
 ```
