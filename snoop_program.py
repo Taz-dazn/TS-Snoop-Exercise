@@ -10,6 +10,7 @@ import psycopg2
 import yaml
 from botocore.exceptions import ClientError
 from yaml.loader import SafeLoader
+from urllib.parse import urlparse
 
 logging.basicConfig(level=logging.INFO)
 
@@ -33,11 +34,9 @@ class SnoopTransactions:
         """
         if self.file_source == 'local':
             data = self._extract_local_file()
-            print('_create_transactions_df:::', type(data))
 
         elif self.file_source == 's3':
             data = self._extract_s3_file()
-
         else:
             raise Exception(f"Incorrect Source: {self.file_source}, it must be one of 'local' or 's3")
 
@@ -46,7 +45,6 @@ class SnoopTransactions:
                                      'merchantId', 'categoryId', 'currency', 'amount', 'description'])
         df.columns = ['customerId', 'customerName', 'transactionId', 'transactionDate', 'sourceDate', 'merchantId',
                       'categoryId', 'currency', 'amount', 'description']
-
         return df
 
     def _extract_local_file(self) -> Dict:
@@ -70,12 +68,14 @@ class SnoopTransactions:
         """
         logging.info('Downloading file from s3...')
         s3_client = boto3.client("s3")
-        source_s3_bucket = self.file_location.split('/')[2]
+        key_split = urlparse(self.file_location, allow_fragments=False)
+        source_s3_bucket = key_split.netloc
+        s3_key = key_split.path.lstrip('/')
 
         with tempfile.TemporaryDirectory() as tmp_directory:
             tmp_file_location = f"{tmp_directory}/tmp_file.json"
             try:
-                s3_client.download_file(source_s3_bucket, self.file_location,
+                s3_client.download_file(source_s3_bucket, s3_key,
                                         tmp_file_location)
             except ClientError as error:
                 print(error)
@@ -220,7 +220,8 @@ class SnoopTransactions:
                 cursor.execute(sql_query)
             conn.commit()
         except (Exception, psycopg2.DatabaseError) as error:
-            print(error)
+            print('ERROR connecting to PostgreSQL DB!')
+            raise error
         finally:
             if conn is not None:
                 conn.close()
