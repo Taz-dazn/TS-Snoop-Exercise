@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+boto3 = "*"
+PyYAML = "*"
+pandas = "*"
+psycopg2 = "*"
+mock = "==3.0.5"
+moto = "==1.3.13"
+pytest = "*"
+
+[requires]
+python_version = "3.9"

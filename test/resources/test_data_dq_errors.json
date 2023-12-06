@@ -1,0 +1,124 @@
+{
+    "transactions": [
+        {
+            "customerId": "fbbe0690-0cd1-48eb-aece-f2744db6f895",
+            "customerName": "Gregory Downs",
+            "transactionId": "7b3c8eee-3689-4cf8-b874-dfbe515d2eb7",
+            "transactionDate": "2022-02-21",
+            "sourceDate": "2022-02-22T21:20:48",
+            "merchantId": 36,
+            "categoryId": 10,
+            "currency": "GBP",
+            "amount": "-1841.11",
+            "description": "Blair-White | Travel"
+        },
+              {
+            "customerId": "fbbe0690-0cd1-48eb-aece-f2744db6f895",
+            "customerName": "Gregory Downs",
+            "transactionId": "7b3c8eee-3689-4cf8-b874-dfbe515d2eb7",
+            "transactionDate": "2022-02-21",
+            "sourceDate": "2022-02-23T21:20:48",
+            "merchantId": 36,
+            "categoryId": 10,
+            "currency": "GBP",
+            "amount": "-1841.11",
+            "description": "Blair-White | Travel"
+        },
+        {
+            "customerId": "fbbe0690-0cd1-48eb-aece-f2744db6f895",
+            "customerName": "Gregory Downs",
+            "transactionId": "3a05ea6b-acb8-4dfe-847e-470b6502bd54",
+            "transactionDate": "2022-04-03",
+            "sourceDate": "2022-04-03T19:00:23",
+            "merchantId": 64,
+            "categoryId": 3,
+            "currency": "SLP",
+            "amount": "594.59",
+            "description": "Sherman-Love | Shopping"
+        },
+        {
+            "customerId": "fbbe0690-0cd1-48eb-aece-f2744db6f895",
+            "customerName": "Gregory Downs",
+            "transactionId": "b14a9ac9-c541-4ba9-8bf1-efbaab61d76f",
+            "transactionDate": "2020-11-11",
+            "sourceDate": "2023-11-13T04:00:20",
+            "merchantId": 61,
+            "categoryId": 4,
+            "currency": "GBP",
+            "amount": "-656.25",
+            "description": "Anderson, Thomas and Jimenez | Eating Out"
+        },
+                {
+            "customerId": "fbbe0690-0cd1-48eb-aece-f2744db6f895",
+            "customerName": "Gregory Downs",
+            "transactionId": "b14a9ac9-c541-4ba9-8bf1-efbaab61d76f",
+            "transactionDate": "2023-11-11",
+            "sourceDate": "2023-11-13T04:00:20",
+            "merchantId": 61,
+            "categoryId": 4,
+            "currency": "GBP",
+            "amount": "-656.25",
+            "description": "Anderson, Thomas and Jimenez | Eating Out"
+        },
+      {
+            "customerId": "a17c27dd-fca5-40c3-9194-0fb431fd2752",
+            "customerName": "Krystal Francis",
+            "transactionId": "51210e40-e88e-48e4-930a-d2996b8c6c8c",
+            "transactionDate": "2020-11-18",
+            "sourceDate": "2020-11-21T19:23:18",
+            "merchantId": 68,
+            "categoryId": 10,
+            "currency": "EUR",
+            "amount": "1344.55",
+            "description": "Gomez, Vaughn and Prince | Travel"
+        },
+        {
+            "customerId": "a17c27dd-fca5-40c3-9194-0fb431fd2752",
+            "customerName": "Krystal Francis",
+            "transactionId": "2f723a71-3d2b-40f2-bd1d-8592b85c7f39",
+            "transactionDate": "2021-10-06",
+            "sourceDate": "2021-10-07T08:22:23",
+            "merchantId": 69,
+            "categoryId": 11,
+            "currency": "EUR",
+            "amount": "-725.79",
+            "description": "Johns and Sons | General"
+        },
+        {
+            "customerId": "a17c27dd-fca5-40c3-9194-0fb431fd2752",
+            "customerName": "Krystal Francis",
+            "transactionId": "4e4dcab4-9789-4a11-ab5f-c66587a3bfa4",
+            "transactionDate": "2020-11-16",
+            "sourceDate": "2020-11-25T10:30:53",
+            "merchantId": 61,
+            "categoryId": 4,
+            "currency": "CAD",
+            "amount": "413.23",
+            "description": "Anderson, Thomas and Jimenez | Eating Out"
+        },
+              {
+            "customerId": "a17c27dd-fca5-40c3-9194-0fb431fd2752",
+            "customerName": "ERROR Krystal Francis",
+            "transactionId": "4e4dcab4-9789-4a11-ab5f-c66587a3bfa4",
+            "transactionDate": "yeash",
+            "sourceDate": "2020-11-28T10:30:53",
+            "merchantId": 61,
+            "categoryId": 4,
+            "currency": "EUR",
+            "amount": "413.23",
+            "description": "Anderson, Thomas and Jimenez | Eating Out"
+        },
+        {
+            "customerId": "a17c27dd-fca5-40c3-9194-0fb431fd2752",
+            "customerName": "Krystal Francis",
+            "transactionId": "2f723a71-3d2b-40f2-bd1d-8592b85c7f39",
+            "transactionDate": "2021-10-06",
+            "sourceDate": "2023-10-07T08:22:23",
+            "merchantId": 69,
+            "categoryId": 11,
+            "currency": "EUR",
+            "amount": "-725.79",
+            "description": "Johns and Sons | General"
+        }
+    ]
+}

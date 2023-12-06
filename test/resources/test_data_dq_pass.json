@@ -1,0 +1,40 @@
+{
+    "transactions": [
+        {
+            "customerId": "fbbe0690-0cd1-48eb-aece-f2744db6f895",
+            "customerName": "Gregory Downs",
+            "transactionId": "7b3c8eee-3689-4cf8-b874-dfbe515d2eb7",
+            "transactionDate": "2023-12-01",
+            "sourceDate": "2023-12-01T21:20:48",
+            "merchantId": 999,
+            "categoryId": 999,
+            "currency": "GBP",
+            "amount": "999.99",
+            "description": "TAZZ B"
+        },
+        {
+            "customerId": "a17c27dd-fca5-40c3-9194-0fb431fd2752",
+            "customerName": "Krystal Francis",
+            "transactionId": "2f723a71-3d2b-40f2-bd1d-8592b85c7f39",
+            "transactionDate": "2023-12-01",
+            "sourceDate": "2023-12-01T08:22:23",
+            "merchantId": 999,
+            "categoryId": 999,
+            "currency": "EUR",
+            "amount": "-999.99",
+            "description": "TAZZY B"
+        },
+                {
+            "customerId": "1111111-fca5-40c3-9194-0fb431fd2752",
+            "customerName": "Krystal Francis",
+            "transactionId": "2f723a71-3d2b-40f2-bd1d-8592b85c7f39",
+            "transactionDate": "2023-12-01",
+            "sourceDate": "2023-12-01T08:22:23",
+            "merchantId": 999,
+            "categoryId": 999,
+            "currency": "EUR",
+            "amount": "-999.99",
+            "description": "TAZZY B"
+        }
+    ]
+}
